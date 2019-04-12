@@ -1,0 +1,74 @@
+<!-- Frames Page -->
+<div class="frames-page">
+
+
+
+
+    <!-- Heading -->
+    <div class="heading">
+
+    </div>
+    <!-- Heading -->
+
+    <!-- Content -->
+    <div class="content">
+
+        <section class="jumbotron">
+            <div class="container">
+                <h1 class="jumbotron-heading">Get a glimpse</h1>
+                <p class="lead text-muted">
+                    Catch a sight of what we have been doing together for past some time
+                </p>
+                <p>
+                    <a href="#" ui-sref="landing.join" class="btn btn-primary my-2">
+                        Join Today
+                    </a>
+                    <a href="#" class="btn btn-secondary my-2">
+                        Secondary action
+                    </a>
+                </p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4" ng-repeat="frame in frames.listing">
+                        <div class="card mb-4 shadow-sm">
+                            <div class="frame-card card-header">
+
+                                <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" -->
+                                <!-- focusable="false" role="img" aria-label="Placeholder: Thumbnail"> -->
+                                <!-- <title>Placeholder</title> -->
+                                <rect width="100%" height="100%" fill="#55595c"></rect>
+                                <text x="50%" y="50%" fill="#eceeef" dy=".3em">{{frame.heading}}</text>
+                                <!-- </svg> -->
+
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    {{frame.detail}}
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <!-- <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                        <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    </div> -->
+                                    <small class="text-muted">
+                                        {{frame.date}}
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Content -->
+
+</div>
